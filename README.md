@@ -1,23 +1,38 @@
-# credit-risk-dashboard
-A portfolio project analyzing and visualizing credit risk profiles using Lending Club data.
+Credit Risk Analysis Dashboard
+This project analyzes Lending Club loan data (2007–2018) to uncover patterns in borrower characteristics, loan purpose, and default behavior. The main goal is to support credit risk assessment with exploratory data analysis (EDA) and structured outputs for business intelligence tools.
 
+Objectives
+Clean and preprocess loan data to enable consistent analysis
 
-This project analyzes Lending Club data to identify key credit risk patterns and build a dashboard showcasing borrower profiles and loan performance.
-The dataset used in this project is available on Kaggle:  
-[Lending Club Loan Data (2007–2018)](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
+Identify key variables that contribute to default likelihood
 
-Note: The full dataset exceeds GitHub’s upload limit, so it's not stored in this repository.
+Summarize loan performance by grade, purpose, and borrower attributes
 
-## Tools Used
-- Python (pandas, matplotlib, seaborn)
-- SQL (for querying structured loan data)
-- Tableau (for dashboard creation)
+Export a Tableau-compatible dataset for building dashboards
 
-## Key Insights
-- Most charged-off loans are associated with lower grades and higher DTI ratios.
-- Risk increases significantly beyond 36-month loan terms.
+Dataset
+Source: Lending Club Loan Data (Kaggle)
 
-## Files
-- `notebooks/`: Python notebooks for EDA and preprocessing
-- `SQL/`: Sample SQL queries used for analysis
-- `dashboard.twb`: Tableau workbook (exported as image or link to Tableau Public)
+Target Variable
+loan_condition: Binary classification of loans into:
+
+Good Loan – current, fully paid
+
+Bad Loan – charged off, default, late
+
+Sample Insights
+Default rates are highest for subgrade F and G loans
+
+Certain purposes such as 'small_business' have higher default probabilities
+
+Correlation analysis shows relationships among interest rate, DTI, and grade
+
+File
+credit_risk_data_cleaned.csv: Cleaned dataset with loan condition and selected features
+
+Tools
+Python (Pandas, Matplotlib, Seaborn)
+
+Jupyter/Colab
+
+Tableau (optional for dashboard)
