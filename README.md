@@ -1,4 +1,5 @@
 Credit Risk Analysis Dashboard
+
 This project analyzes Lending Club loan data (2007–2018) to uncover patterns in borrower characteristics, loan purpose, and default behavior. The main goal is to support credit risk assessment with exploratory data analysis (EDA) and structured outputs for business intelligence tools.
 
 Objectives
